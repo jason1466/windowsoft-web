@@ -1,22 +1,23 @@
 {
-  "name": "remington-construction",
+  "name": "windowsoft-web",
   "version": "1.0.0",
-  "description": "Windowsoft Angular Material Business Services Theme",
-  "engines": {
-    "node": "6.6.0"
-  },
-  "main": "",
+  "description": "Windowsoft Angular Material Business Services Theme.  This is a static template with no bundling",
+  "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "lite-server"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://windowsoft.visualstudio.com/DefaultCollection/_git/RemingtonDc"
+    "url": "git+https://github.com/jason1466/windowsoft-web.git"
   },
+  "keywords": [],
   "author": "Jason Lukas",
   "license": "ISC",
-  "devDependencies": {
+  "bugs": {
+    "url": "https://github.com/jason1466/windowsoft-web/issues"
+  },
+  "homepage": "https://github.com/jason1466/windowsoft-web#readme",
+    "devDependencies": {
   },
   "dependencies": {
     "object-fit-images": "^2.5.6",
