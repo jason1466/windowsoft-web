@@ -1,0 +1,111 @@
+<md-dialog aria-label="Custom Websites">
+    <md-toolbar class="md-toolbar-tools">
+        <div class="md-headline" style="font-weight: bold;">Custom Websites</div>
+        <div flex></div>
+        <md-button class="md-icon-button md-primary" ng-click="cancel()" title="Close">
+            <md-icon style="color: black;">close</md-icon>
+        </md-button>
+    </md-toolbar>
+
+    <md-dialog-content>
+        <div class="md-dialog-content">
+
+            <img class="OF-cover" style="height: 200px;" src="assets/Close-up-of-designers-hands-471224766_858x410.jpeg" />
+
+            <div class="md-subhead" style="font-size:18px; line-height: 170%; padding: 20px 50px 0 0;">
+                Every website should be a visual work of art, with functionality and a vision that reflects your company’s image and brand. 
+                We create every site to stand out from the crowd and be as unique as the company it represents. We use Google Material Design, WordPress CMS and Microsoft Azure Global Cloud Services.
+            </div>
+            <div layout layout-align="center" layout-padding class="md-headline" style="font-weight: bold;">Our Integrated Technology Solutions</div>
+
+            <div layout="row" layout-padding>
+                <div layout-padding>
+                    <div class="md-headline" style="font-weight: bold;">Google Material Design</div>
+                    <div class="md-subhead" style="font-size:18px; line-height: 170%;">
+                        As of 2015 most of Google's mobile and desktop applications have applied the new design language including Gmail, YouTube, Google Drive, Google Docs, Google Maps, etc. 
+                        It aspires to unite Google’s expansive product line under a rich set of design styles and principles.
+                        <ul>
+                            <li>A new design language developed by Google in 2014 that synthesizes traditional principles of design best practices with the innovation and possibility of technology and science.</li>
+                            <li>Based on paper and ink, material design has physical surfaces and edges, seams and shadows that provide meaning about what you can touch.</li>
+                            <li>Extends throughout Google's suite of web and mobile products, providing an integrated and consistent user experience across all platforms and applications.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div hide-xs hide-sm>
+                    <img width="300" src="assets/MaterialDesign.jpg"/>
+                </div>
+            </div>
+
+            <div layout="row" layout-padding>
+                <div hide-xs hide-sm>
+                    <img width="300" src="assets/WordPress-458090181_725x483.jpeg" />
+                </div>
+                <div layout-padding>
+                    <div class="md-headline" style="font-weight: bold;">WordPress</div>
+                    <div class="md-subhead" style="font-size:18px; line-height: 170%;">
+                        WordPress is the most popular content management system on the Web. Started in 2003 as an open source blogging platform,
+                        it has evolved into a full content management system (CMS) through thousands of plugins, widgets
+                        and themes. WordPress is used by more than 27.5% of the top 10 million websites.
+                        <ul>
+                            <li>Using a web template system, you can switch between different themes, changing both the look
+                                and the functionality of your web site.</li>
+                            <li>Easy to customize, intuitive user interface with no previous programming knowledge needed</li>
+                            <li>10,000+ WordPress themes and 50,000+ plugins available that make SEO and social sharing a breeze</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div layout="row" layout-padding>
+                <div layout-padding>
+                    <div class="md-headline" style="font-weight: bold;">Microsoft Azure Global Cloud</div>
+                    <div class="md-subhead" style="font-size:18px; line-height: 170%;">
+                        Microsoft Azure is a growing collection of integrated cloud services that developers and IT professionals use to build, deploy,
+                        and manage applications through our global network of datacenters. Whether you need an e-commerce
+                        online store or an enterprise-level corporate web site, we have the tools necessary to make your project
+                        a success!
+                        <ul>
+                            <li>Integrated Solutions - Connect cloud and on-site technology for maximum portability and value
+                                for your existing investments.</li>
+                            <li>Compatibility - Azure is compatible with a multitude of operating systems, programming languages,
+                                frameworks, databases, and devices.</li>
+                            <li>Flexible framework - Azure offers hybrid consistency everywhere: in application development,
+                                management and security, identity management, and across the data platform.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div hide-xs hide-sm>
+                    <img width="300" src="components/app/azurelogo.png" />
+                </div>
+            </div>
+
+        </div>
+    </md-dialog-content>
+
+    <md-dialog-actions>
+        <div layout="column" layout-gt-xs="row" layout-align="center center" flex>
+            <div flex hide-xs>
+                <md-button class="md-raised md-accent md-hue-2" style="margin:0; min-height:48px;" ng-click="link('contact')">NEED A WEBISTE THAT GENERATES LEADS?</md-button>
+            </div>
+            <div layout="row" layout-align="end center" layout-padding>
+                <div class="md-title">Share:</div>
+                <md-button href="h//www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.windowsoft.com%2F&title=Windowsoft&source=https://www.windowsoft.com/"
+                    class="md-icon-button md-primary" title="LinkedIn - Windowsoft" target="_blank">
+                    <i class="fa fa-linkedin footer-social"></i>
+                </md-button>
+                <md-button href="//twitter.com/intent/tweet?original_referer=http%3A%2F%2Fwindowsoft.com%2F&ref_src=twsrc%5Etfw&text=Windowsoft%20-%20Marketing%20Planning%20and%20Strategy&tw_p=tweetbutton&url=http%3A%2F%2Fwindowsoft.com%2F&via=Windowsoft" 
+                    class="md-icon-button md-primary" title="Twitter - Tweet Windowsoft" target="_blank">
+                    <i class="fa fa-twitter footer-social"></i>
+                </md-button>
+                <md-button href="//www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.windowsoft.com%2F" 
+                    class="md-icon-button md-primary" title="Facebook - Windowsoft" target="_blank">
+                    <i class="fa fa-facebook footer-social"></i>
+                </md-button>
+                <md-button href="//plus.google.com/share?url=https%3A%2F%2Fwww.windowsoft.com%2F" 
+                    class="md-icon-button md-primary" title="Google Plus - Windowsoft" target="_blank">
+                    <i class="fa fa-google-plus footer-social"></i>
+                </md-button>
+            </div>
+        </div>
+    </md-dialog-actions>
+</md-dialog>

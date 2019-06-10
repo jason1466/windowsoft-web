@@ -1,0 +1,328 @@
+
+<md-sidenav class="md-sidenav-right" md-component-id="right" md-whiteframe="4">
+  <md-toolbar class="md-hue-2">
+    <md-button ng-click="$ctrl.closeSideNav()" style="text-align:right; height:64px; margin:0; padding-right:30px;">
+      <md-icon md-font-library="material-icons">close</md-icon>
+    </md-button>
+  </md-toolbar>
+  <md-content layout="column" layout-padding>
+    <md-button du-smooth-scroll="section-00" du-scrollspy ng-click="$ctrl.closeSideNav()">Home</md-button>
+    <md-button du-smooth-scroll="section-10" du-scrollspy ng-click="$ctrl.closeSideNav()">Services</md-button>
+    <md-button du-smooth-scroll="section-20" du-scrollspy ng-click="$ctrl.closeSideNav()">Our Clients</md-button>
+    <md-button du-smooth-scroll="section-30" du-scrollspy ng-click="$ctrl.closeSideNav()">About</md-button>
+    <md-button du-smooth-scroll="section-40" du-scrollspy ng-click="$ctrl.closeSideNav()">Contact</md-button>
+  </md-content>
+</md-sidenav>
+
+<nav-bar is-dialog-open="$ctrl.isDialogOpen" style="position:fixed; z-index:50; top:0; width:100%;" on-menu-click="$ctrl.toggleSideNav()">Foo</nav-bar>
+
+<div style="width:100%; height:90%; overflow:hidden;">
+  <video hide-xs class="OF-cover" id="section-00" autoplay loop width="100%" poster="components/app/HD-CRANE-Musician-Inspired-By-Nature.jpg">
+    <source type="video/mov" src="components/app/HD-CRANE-Musician-Inspired-By-Nature-1080.mov">
+    <source type="video/mp4" src="components/app/HD-CRANE-Musician-Inspired-By-Nature-1080.mp4">
+    Your browser does not support HTML5 video.
+  </video>
+  <div hide-xs layout="column" layout-align="end center" layout-padding style="color:white; width:100%; height:90%; position:absolute; top:0; padding:0;">
+    <div class="md-display-2" style="width:100%; background-color:rgba(0, 0, 0, 0.6); text-align: center; padding-top:15px;">Creative Marketing Agency</div>
+    <div class="md-headline" style="width:100%; background-color:rgba(0, 0, 0, 0.6); text-align: center; line-height: 100%;">Your voice, your story, your vision.</div>
+    <div class="md-headline" style="width:100%; background-color:rgba(0, 0, 0, 0.6); text-align: center; line-height: 100%;">The world is waiting to hear it.</div>
+    <div class="md-headline" style="width:100%; background-color:rgba(0, 0, 0, 0.6); text-align: center; line-height: 100%; padding-bottom:40px;">We can help spread the word.</div>
+  </div>
+  <div hide-gt-xs layout="column" layout-align="start center" layout-padding class="splash-mobile">
+    <div flex class="md-headline" style="width:100%; background-color:rgba(0, 0, 0, 0.6);"></div>
+    <div class="md-display-2" style="width:100%; background-color:rgba(0, 0, 0, 0.6); text-align: center; padding-top:15px;">Creative Marketing Agency</div>
+    <div class="md-headline" style="width:100%; background-color:rgba(0, 0, 0, 0.6); text-align: center; line-height: 100%;">Your voice, your story, your vision.</div>
+    <div class="md-headline" style="width:100%; background-color:rgba(0, 0, 0, 0.6); text-align: center; line-height: 100%;">The world is waiting to hear it.</div>
+    <div class="md-headline" style="width:100%; background-color:rgba(0, 0, 0, 0.6); text-align: center; line-height: 100%;">We can help spread the word.</div>
+    <div flex class="md-headline" style="width:100%; background-color:rgba(0, 0, 0, 0.6);"></div>
+  </div>
+</div>
+
+<div id="section-10" layout="column" layout-align="center center" style="padding-top:20px;">
+  <div layout-padding class="md-display-1">Our Services</div>
+  <div layout="row" layout-wrap layout-align="center center">
+    <md-card class="service-card" layout="column" layout-align="start center" ng-click="$ctrl.openDialog('marketing-strategy', $event)">
+      <img src="assets/images/Strategy-488239412_766x459.jpeg" style="height:213px;" />
+      <div class="service-title md-title">Marketing Strategy</div>
+      <div class="service-text md-body-1">
+        A clear marketing plan defines and directs the marketing activities that build your customer base and increase revenue. 
+        We evaluate your on-line presence (web site, social media pages, e-mail campaigns), review your marketing collateral, 
+        provide you with feedback as to the consistency of your branding and deliver a custom plan tailored to your business objectives.
+      </div>
+      <div flex></div>
+      <md-button class="service-more-btn">Read More ...</md-button>
+    </md-card>
+    <md-card class="service-card" layout="column" layout-align="start center" ng-click="$ctrl.openDialog('custom-websites', $event)">
+      <img src="assets/Laptop-on-the-Desk-with-Mobile-Phone-509351596_727x484.jpeg" style="height:213px;" />
+      <div class="service-title md-title">Custom Websites</div>
+      <div class="service-text md-body-1">
+       We design, create and professionally host custom websites that are elegant, professional and results-driven.  
+       Our websites engage your target audience and convert your visitors into leads. 
+       Modern and highly responsive, they offer an exceptional user experience on both mobile devices as well as desktop screens. 
+       [*Enterprise-level solutions are also available.]
+      </div>
+      <div flex></div>
+      <md-button class="service-more-btn">Read More ...</md-button>
+    </md-card>
+    <md-card class="service-card" layout="column" layout-align="start center" ng-click="$ctrl.openDialog('social-media', $event)">
+      <img src="assets/Background-of-famous-social-media-icons-506177624_727x485.jpeg" style="height:213px;" />
+      <div class="service-title md-title">Social Media</div>
+      <div class="service-text md-body-1">
+        Having an active social media presence has become an important business requirement for acquiring new customers online and growing your brand influence. 
+        Windowsoft can help you identify where your customers are spending their time and how to connect with them. 
+        We can create and design effective company profiles on various networks and develop a comprehensive social media marketing strategy.
+      </div>
+      <div flex></div>
+      <md-button class="service-more-btn">Read More ...</md-button>
+    </md-card>
+    <md-card class="service-card" layout="column" layout-align="start center" ng-click="$ctrl.openDialog('content-marketing', $event)">
+      <img src="assets/write-original,-useful,-informative-conctent-521086170_727x484.jpeg" style="height:213px;" />
+      <div class="service-title md-title">Content Marketing</div>
+      <div class="service-text md-body-1">
+        Customized content creation and promotion that is reflective of your brand is critical to your company’s success. 
+        Quality content has become the foundation of SEO and can drive qualified traffic and leads - increasing your on-line presence. 
+        Having a strong content strategy in place gives you the opportunity to attract and engage your audience, setting yourself apart from your competition.
+      </div>
+      <div flex></div>
+      <md-button class="service-more-btn">Read More ...</md-button>
+    </md-card>
+  </div>
+</div>
+
+<md-card id="section-20" layout="column" layout-align="center center" class="main-card">
+	<div layout-padding class="md-display-1">Our Clients</div>
+  <div layout layout-wrap layout-padding layout-align="space-around center" style="width:100%;">
+      <div><a href="http://www.ryanhomes.com/" target="_blank"><img src="components/app/ryan_homes_blue_logo.png" width="100" /></a></div>
+      <div><a href="http://www.nvhomes.com/" target="_blank"><md-icon md-svg-src="components/app/nvhomes_expanded_text.svg" style="width:143px; height:40px;"></md-icon></a></div>
+      <div><a href="http://www.nouvelusa.com/" target="_blank"><img src="components/app/NKB_logo_final661.jpg" width="143" /></a></div>
+      <div><a href="http://www.remingtondc.com/" target="_blank"><img src="components/app/rc_logo_new.png" width="143" /></a></div>
+      <div><a href="http://www.barwoodtaxi.com/" target="_blank"><img src="components/app/barwood_logo.png" width="143" /></a></div>
+  </div>
+</md-card>
+
+<md-card id="section-30" layout="column" layout-padding layout-align="center center" class="main-card about-card" style="margin-top:18px;">
+  <div class="md-display-1">About</div>
+
+  <!--<div class="md-title" layout layout-padding style="text-align:center;">Windowsoft helps companies create, maintain and grow their brand, their revenues and their dream. Our marketing experts build a connected roadmap to deliver specific results you need.</div>-->
+
+  <div class="about-image" layout="column" layout-align="space-around center">
+    <div layout="column" class="md-subhead about-content" layout-padding>
+
+      <div layout="column" layout-align="center center" layout-padding>
+        <div class="md-subhead" style="font-size:19px; line-height: 125%;">
+          Windowsoft helps companies create, maintain and grow their brand and increase revenue. We develop customized marketing strategies that leverage modern technology and give you the competitive edge in your industry.
+        </div>
+      </div>
+
+      <div layout="row" layout-padding layout-wrap layout-align="center start">
+        <div layout="column" layout-padding layout-align="start center" style="max-width:350px;">
+          <div>
+            <md-icon style="color:white;font-size:72px; height:72px; width:72px;">supervisor_account</md-icon>
+          </div>
+          <div class="md-headline" style="font-weight: bold;">Company Values</div>
+          <div class="md-subhead" style="font-size:19px; line-height: 125%;">
+            <p>Accountability to our clients - we want you to see the value we add to your business.</p>
+            <p>Tangible results – we measure your campaign successes and dynamically adjust our strategies to get the highest engagement.</p>
+            <p>Creative Solutions - we offer solutions that reflect your brand, utilize modern technology and deliver results.</p>
+          </div>
+        </div>
+
+        <div layout="column" layout-padding layout-align="start center" style="max-width:350px;">
+          <div>
+            <md-icon style="color:white;font-size:72px; height:72px; width:72px;">color_lense</md-icon>
+          </div>
+          <div class="md-headline" style="font-weight: bold;">Creative Talent</div>
+          <div class="md-subhead" style="font-size:19px; line-height: 125%;">
+            <p>Our marketing and technical experts are dedicated to showcasing your company to your ideal clients. We like to work with brands that have unique personalities and are passionate about what they do.</p>
+          </div>
+        </div>
+
+        <div layout="column" layout-padding layout-align="start center" style="max-width:350px;">
+          <div>
+            <md-icon style="color:white;font-size:72px; height:72px; width:72px;">cached</md-icon>
+          </div>
+          <div class="md-headline" style="font-weight: bold;">Integrated Solutions</div>
+          <div class="md-subhead" style="font-size:19px; line-height: 125%;">
+            <p>We strive to help you overcome your business challenges.<p>
+            <p>We leverage cloud-based technology to build your brand on a reliable and scalable platform.<p>
+            <p>Strategy and communications planning is our primary area of expertise.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</md-card>
+
+<div id="section-40" layout="column" layout-gt-sm="row" class="main-card">
+
+  <md-card layout="column" layout-align="start center" layout-padding flex>
+    <div layout-padding class="md-display-1">Drop Us a Line</div>
+    <!--<div class="md-subhead">We are happy to talk with you!</div>-->
+    <div layout="column" style="width: 90%;" class="disabled-color">
+      <form layout="column" name="contactForm" ng-hide="$ctrl.contactSent">
+        <md-input-container class="md-block">
+          <label>Your Name</label>
+          <input required name="name" ng-model="$ctrl.contact.name">
+          <div ng-messages="contactForm.name.$error">
+            <div ng-message="required">This is required.</div>
+          </div>
+        </md-input-container>
+        <md-input-container class="md-block">
+          <label>Company</label>
+          <input name="company" ng-model="$ctrl.contact.company">
+        </md-input-container>
+        <!--<md-input-container class="md-block" flex-gt-xs>
+          <label>Project Type</label>
+          <md-select name="type" ng-model="$ctrl.contact.type" required>
+            <md-option value="app">Application</md-option>
+            <md-option value="web">Website</md-option>
+          </md-select>
+        </md-input-container>-->
+        <md-input-container class="md-block">
+          <label>Email</label>
+          <input required md-select-on-focus type="email" name="email" ng-model="$ctrl.contact.email" minlength="9" maxlength="100" ng-pattern="/^.+@.+\..+$/" />
+          <div ng-messages="contactForm.email.$error">
+            <div ng-message-exp="['required', 'minlength', 'maxlength', 'pattern']">Your email must be between 9 and 100 characters long and look like an e-mail address.</div>
+          </div>
+        </md-input-container>
+        <md-input-container class="md-block">
+          <label>Phone</label>
+          <input md-select-on-focus name="phone" ng-model="$ctrl.contact.phone" ng-pattern="/^\(?([0-9]{3})\)?[-.●]?([0-9]{3})[-.●]?([0-9]{4})$/" />
+          <div class="hint" ng-show="showHints">(###) ###-####</div>
+          <div ng-messages="contactForm.phone.$error" ng-hide="showHints">
+            <div ng-message="pattern">(###) ###-#### - Please enter a valid phone number.</div>
+          </div>
+        </md-input-container>
+        <md-input-container class="md-block">
+          <label>Message</label>
+          <textarea rows="5" md-maxlength="1000" md-select-on-focus md-no-asterisk name="message" ng-model="$ctrl.contact.message"></textarea>
+          <div ng-messages="contactForm.message.$error">
+            <div ng-message="md-maxlength">The message must be less than 1000 characters long.</div>
+          </div>
+        </md-input-container>
+      </form>
+      <div layout layout-align="center" class="md-body-2" ng-style="{ 'padding-top': '10px', 'color' : $ctrl.contactMessageColor }">{{$ctrl.contactMessage}}</div>
+      <md-button class="md-accent md-raised md-hue-2" ng-hide="$ctrl.contactSent" ng-disabled="!contactForm.$valid" ng-click="$ctrl.contactRequest()" style="padding: 8px 16px;">Send Message</md-button>
+    </div>
+  </md-card>
+
+  <md-card layout="column" layout-align="start center" layout-padding flex>
+    <div layout="column" layout-align="start center">
+      <div layout-padding class="md-display-1">Contact Details</div>
+      <div layout="column" layout-align="center center" style="line-height:200%; padding-top:20px;">
+        <div class="md-subhead">Monday - Friday</div>
+        <div class="md-title" style="font-weight: bold;">9:00am - 5:00pm</div>
+      </div>
+    </div>
+    <div layout="column" layout-align="start start" layout-padding style="padding-top:15px;">
+      <div layout="row">
+        <div style="padding-top:5px;">
+          <md-button class="md-fab md-accent md-hue-2" href="tel:301-883-1211" aria-label="phone">
+            <md-icon style="font-size:36px; height:36px; width:36px;">phone</md-icon>
+          </md-button>
+        </div>
+        <div style="padding-left:15px; line-height:200%;">
+          <div class="md-subhead" style="padding-top:5px;">PHONE</div>
+          <div class="md-title" style="padding-top:0px; font-weight: bold;">(301) 883-1211</div>
+        </div>
+      </div>
+
+      <div layout="row" style="padding-top:20px;">
+        <div style="padding-top:5px;">
+          <md-button class="md-fab md-accent md-hue-2" aria-label="fax">
+            <md-icon style="font-size:36px; height:36px; width:36px;">ring_volume</md-icon>
+          </md-button>
+        </div>
+        <div style="padding-left:15px; line-height:200%;">
+          <div class="md-subhead" style="padding-top:5px;">FAX</div>
+          <div class="md-title" style="padding-top:0px; font-weight: bold;">(646) 365-1468</div>
+        </div>
+      </div>
+
+      <div class="md-body-1" layout="row" style="padding-top:20px;">
+        <div style="padding-top:5px;">
+          <md-button class="md-fab md-accent md-hue-2" href="mailto:info@windowsoft.com?subject=Windowsoft Website Inquiry" aria-label="email">
+            <md-icon style="font-size:36px; height:36px; width:36px;">email</md-icon>
+          </md-button>
+        </div>
+        <div style="padding-left:15px; line-height:200%;">
+          <div class="md-subhead" style="padding-top:5px;">EMAIL</div>
+          <div class="md-title" style="padding-top:0px; font-weight: bold;">info@windowsoft.com</div>
+        </div>
+      </div>
+
+      <div class="md-body-1" layout="row" style="padding-top:20px; padding-bottom:25px;">
+        <div style="padding-top:5px;">
+          <md-button class="md-fab md-accent md-hue-2" href="https://www.google.com/maps/place/6510+Greentree+Rd+%23100,+Bethesda,+MD+20817/@39.0038919,-77.1350829,17z/data=!3m1!4b1!4m5!3m4!1s0x89b7cb96c8e4321f:0xc6e45fafaeee495f!8m2!3d39.0038878!4d-77.1328942" target="_blank" aria-label="address">
+            <md-icon style="font-size:36px; height:36px; width:36px;">location_on</md-icon>
+          </md-button>
+        </div>
+        <div style="padding-left:15px; line-height:200%;">
+          <div class="md-subhead" style="padding-top:5px;">ADDRESS</div>
+          <div class="md-title" style="padding-top:0px; font-weight: bold;">6510 Greentree Road, Suite 100</div>
+          <div class="md-title" style="padding-top:0px; font-weight: bold;">Bethesda, MD 20817</div>
+        </div>
+      </div>
+    </div>
+  </md-card>
+</div>
+
+<md-card class="main-card">
+  <img src="components/app/6510_Greentree_Rd__100_-_Google_Maps.jpg" class="OF-cover" style="height:500px;" />
+</md-card>
+
+<div id="section-40" flex layout="row" layout-wrap layout-padding class="main-card">
+  <div layout="column" style="width:400px;">
+    <div class="md-headline" style="font-weight:bold;">Sign up for our Newsletter</div>
+    <div class="md-body-2" ng-style="{ 'padding-top': '10px', 'color' : $ctrl.newsletterMessageColor }">{{$ctrl.newsletterMessage}}</div>
+    <div layout="row" ng-hide="$ctrl.newsletterSent" class="disabled-color">
+      <form name="newsletterForm" flex>
+        <md-input-container class="md-block" flex>
+          <label>Email</label>
+          <input required md-select-on-focus type="email" name="email" ng-model="$ctrl.newsletterEmail" minlength="9" maxlength="100" ng-pattern="/^.+@.+\..+$/" />
+          <div ng-messages="newsletterForm.email.$error" role="alert">
+            <div ng-message-exp="['required', 'minlength', 'maxlength', 'pattern']">
+              Your email must be between 9 and 100 characters long and look like an e-mail address.
+            </div>
+          </div>
+        </md-input-container>
+      </form>
+      
+      <md-button
+          data-sitekey="6Ld-zxoUAAAAAPeQBpiXQ5vQspIyTv8I_9AXbu_6"
+          data-callback="onNewsletterRequest"
+          data-size="invisible"
+          class="md-accent md-raised md-hue-2 g-recaptcha"
+          style="height:52px;"
+          ng-click="$ctrl.newsletterRequest()"
+          ng-disabled="!newsletterForm.$valid">
+          Go
+        </md-button>
+        <!--ng-click="$ctrl.validateNewsletterRequest()"-->
+
+    </div>
+  </div>
+  <div flex></div>
+  <div class="md-caption" layout="column" layout-align="end end">
+    <div layout="row" style="padding-bottom: 10px;">
+      <div><a href="//www.linkedin.com/company-beta/11117412/" title="LinkedIn - Windowsoft" target="_blank"><i class="fa fa-linkedin footer-social"></i></a></div>
+      <div><a href="//twitter.com/WindowsoftCorp" title="Twitter - Windowsoft" target="_blank"><i class="fa fa-twitter footer-social"></i></a></div>
+      <div><a href="//www.facebook.com/Windowsoft-206125046489998/" title="Facebook - Windowsoft" target="_blank"><i class="fa fa-facebook footer-social"></i></a></div>
+      <div><a href="//plus.google.com/109703677084398069944" title="Google Plus - Windowsoft" target="_blank"><i class="fa fa-google-plus footer-social"></i></a></div>
+      <!--<div><a href="instagram://user?username=RemingtonDcCo" title="Instagram - Windowsoft"><i class="fa fa-instagram footer-social"></i></a></div>-->
+    </div>
+    <div class="md-title" style="padding-bottom: 10px;">(301) 883-1211</div>
+    <div style="padding-bottom: 5px;">© Copyright {{$ctrl.today.getFullYear()}} Windowsoft. All rights reserved.</div>
+    <div>
+      <md-button style="margin: 0;" ng-click="$ctrl.openDialog('privacy', $event)">Privacy Policy</md-button>
+      <md-button style="margin: 0px; padding-right: 0px;" ng-click="$ctrl.openDialog('terms', $event)">Terms and Conditions</md-button>
+      <!--<md-button ng-click="$ctrl.openDialog('use', $event)">Acceptable Usage Policy</md-button>-->
+    </div>
+    <div>
+      <a href="http://www.gixen.com/" name="92d09a9419e724e6c9c58701b9af5efd" target="_blank" >
+        <div style="font-size: 8px; color: black; text-decoration: none;">eBay Sniper</div>
+      </a>
+    </div>
+  </div>
+</div>
