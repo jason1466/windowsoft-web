@@ -1,0 +1,37 @@
+<md-toolbar hide-xs hide-sm layout layout-align="center" class="md-hue-1" style="{{ $ctrl.isScrollTop && !$ctrl.isDialogOpen ? 'background-color:transparent;' : 'background-color:#212121; color:white;' }}">
+	<md-button du-smooth-scroll="section-00" class="logo-btn">
+		<md-icon md-svg-src="components/nav-bar/ws-logo-name-slogan.svg" class="logo-btn-icon" style="{{ $ctrl.isScrollTop && !$ctrl.isDialogOpen ? 'fill:black;' : 'fill:white;' }}"></md-icon>
+	</md-button>
+	<div flex></div>
+	<md-button du-smooth-scroll="section-10" du-scrollspy>Services</md-button>
+	<md-button du-smooth-scroll="section-20" du-scrollspy>Our Clients</md-button>
+	<md-button du-smooth-scroll="section-30" du-scrollspy>About</md-button>
+	<md-button du-smooth-scroll="section-40" du-scrollspy>Contact</md-button>
+	<div flex></div>
+	<md-button class="md-raised md-accent md-hue-2" du-smooth-scroll="section-40">
+		<!--<div class="md-title" style="height:32px; line-height:38px;">301-992-0909</div>-->
+		<div>Get Started Now</div>
+	</md-button>
+</md-toolbar>
+
+<md-toolbar hide-gt-sm layout="row" layout-align="center center" class="md-hue-1" style="{{ $ctrl.isScrollTop ? 'background-color:transparent;' : 'background-color:#212121; color:white;' }}">
+	<md-icon md-svg-src="components/nav-bar/ws-logo-name-slogan.svg" class="logo-btn-icon-mobile" style="{{ $ctrl.isScrollTop && !$ctrl.isDialogOpen ? 'fill:black;' : 'fill:white;' }}"></md-icon>
+	<div flex></div>
+	<div layout="row" layout-align="start center" style="padding-left:15px; line-height:64px;">
+		<md-button class="md-fab md-mini md-primary md-raised md-accent md-hue-2" href="tel:301-883-1211" aria-label="phone" style="padding:0;">
+			<md-icon>phone</md-icon>
+		</md-button>
+		<div hide-xs class="md-title" style="padding-left:10px; line-height:64px;">(301) 883-1211</div>
+	</div>
+	<div flex></div>
+	<md-button ng-click="$ctrl.onMenuClick()" aria-label="Menu">
+		<md-icon style="{{ $ctrl.isScrollTop ? 'color:black;' : 'color:white;' }}">menu</md-icon>
+	</md-button>
+</md-toolbar>
+
+
+<a style="{{ $ctrl.isScrollTop ? '' : 'right:-1px;' }}" class="gh-hide-if-nocss" id="gh-bt" href="" du-smooth-scroll="section-00">
+<img id="gh-bti" title="Scroll to top" src="//ir.ebaystatic.com/pictures/aw/pics/globalheader/btt.png" alt="Scroll to top"
+	_id="gh-bti" height="76" width="33" border="0">
+</a>
+

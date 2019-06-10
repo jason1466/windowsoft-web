@@ -1,0 +1,7 @@
+{
+  "debug": true,
+  "appErrorPrefix": "[MyApp-Error]",
+  "mailbox": "info@windowsoft.com",
+  "mailerUrl": "https://prod-19.eastus2.logic.azure.com:443/workflows/84ef8ce5e9ab49fd8ec1b92cdb4be992/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=hMzgQjo6psy8YsrdtnwaAmHO0c2X6rf7et6y6M3CLc0",
+  "recaptchaSiteKey": "6Ld-zxoUAAAAAPeQBpiXQ5vQspIyTv8I_9AXbu_6"
+}
