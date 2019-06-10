@@ -1,12 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Static Template</title>
-  </head>
-  <body>
-    <h1>This is a static template, there is no bundler or bundling involved!</h1>
-  </body>
+<html lang="en" manifest="wp-content/themes/windowsoft-services/cache.manifest">
+
+<head>
+	
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-107911031-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'UA-107911031-1');
+	</script>
+
+	<title>Windowsoft</title>
+  	<?php wp_head();?>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<base href="/<?php echo 'wp-content/themes/windowsoft-services/'; ?>">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="/manifest.json">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="theme-color" content="#ffffff">
+
+	<!-- Public Code and Styles -->
+	<script async="" src="//www.google-analytics.com/analytics.js"></script>
+	<script src="node_modules/object-fit-images/dist/ofi.browser.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular-resource.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular-animate.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular-aria.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular-messages.min.js"></script>
+	<script src="node_modules/angular-scroll/angular-scroll.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angular_material/1.1.4/angular-material.min.js"></script>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
+	<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/angular_material/1.1.4/angular-material.min.css">
+	<link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+	<!-- Private Code and Styles -->
+	<script src="components/app/app.module.js"></script>
+	<script src="components/app/app.run.js"></script>
+	<script src="components/app/app.config.js"></script>
+	<script src="components/app/app.component.js"></script>
+	<link rel="stylesheet" href="components/app/app.css">
+	<script src="components/settings/settings.repo.js"></script>
+	<script src="components/settings/settings.service.js"></script>
+	<script src="components/nav-bar/nav-bar.component.js"></script>
+	<link rel="stylesheet" href="components/nav-bar/nav-bar.css">
+
+	<script type="text/javascript">
+	var AppAPI = {"url":"\/\/remington.azurewebsites.net\/api\/"};
+	var BlogInfo = {"url":"\/\/remington.azurewebsites.net\/wp-content\/themes\/windowsoft-services\/","site":"\/\/remington.azurewebsites.net"};
+	
+		//document.querySelector(objectFitImages.supportsObjectFit ? '.of-supported' : '.of-not-supported').style.display = 'block';
+		//objectFitImages();
+
+	</script>
+	<!--<script src="https://www.google.com/recaptcha/api.js" async defer></script>-->
+</head>
+
+<body ng-app="app" ng-cloak>
+
+	<!--<img class="OF-cover" src="https://goo.gl/DvBM70">-->
+
+	<app test1="foo"></app>
+
+	<!-- display all post titles in a list -->
+	<!--<ul>
+		<li ng-repeat="post in postdata">{{post.title}}</li>
+	</ul>-->
+
+</body>
+
 </html>
