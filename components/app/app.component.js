@@ -147,7 +147,7 @@ $ctrl.validateNewsletterRequest = validateNewsletterRequest;
 
         function validateNewsletterRequest() {
             //grecaptcha.reset();
-            grecaptcha.execute();
+            //grecaptcha.execute();
         }
         
         function newsletterRequest(token) {
