@@ -17,13 +17,13 @@
 <md-toolbar hide-gt-sm layout="row" layout-align="center center" class="md-hue-1" style="{{ $ctrl.isScrollTop ? 'background-color:transparent;' : 'background-color:#212121; color:white;' }}">
 	<md-icon md-svg-src="components/nav-bar/ws-logo-name-slogan.svg" class="logo-btn-icon-mobile" style="{{ $ctrl.isScrollTop && !$ctrl.isDialogOpen ? 'fill:black;' : 'fill:white;' }}"></md-icon>
 	<div flex></div>
-	<div layout="row" layout-align="start center" style="padding-left:15px; line-height:64px;">
-		<md-button class="md-fab md-mini md-primary md-raised md-accent md-hue-2" href="tel:301-883-1211" aria-label="phone" style="padding:0;">
+	<!-- <div layout="row" layout-align="start center" style="padding-left:15px; line-height:64px;">
+		<md-button class="md-fab md-mini md-primary md-raised md-accent md-hue-2" href="tel:301-883-12" aria-label="phone" style="padding:0;">
 			<md-icon>phone</md-icon>
 		</md-button>
-		<div hide-xs class="md-title" style="padding-left:10px; line-height:64px;">(301) 883-1211</div>
+		<div hide-xs class="md-title" style="padding-left:10px; line-height:64px;">(301) 883-12</div>
 	</div>
-	<div flex></div>
+	<div flex></div> -->
 	<md-button ng-click="$ctrl.onMenuClick()" aria-label="Menu">
 		<md-icon style="{{ $ctrl.isScrollTop ? 'color:black;' : 'color:white;' }}">menu</md-icon>
 	</md-button>
