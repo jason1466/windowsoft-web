@@ -16,8 +16,9 @@
     "url": "https://github.com/jason1466/windowsoft-web/issues"
   },
   "homepage": "https://github.com/jason1466/windowsoft-web#readme",
-    "devDependencies": {
-  },
+  "devDependencies": {},
   "dependencies": {
+    "angular-scroll": "^1.0.2",
+    "object-fit-images": "^3.2.4"
   }
 }
